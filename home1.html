@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <img src="images/Menu.png" style="filter: invert(100%)" width="30px" />
+      </label>
+      <label class="logo" style="display: inline-block"
+        ><h1>U1 <span>.</span></h1></label
+      >
+      <ul>
+        <li><a href="#" class="not_active">Home</a></li>
+        <li><a href="#abouth1" class="not_active">About</a></li>
+        <li><a href="#proj" class="not_active">Projects</a></li>
+        <li><a href="#con-head" class="not_active">Contact</a></li>
+        <li>
+          <a
+            href="https://www.facebook.com/yuvan.prasath.771"
+            target="_blank"
+            class="con-logo"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/_.__u1__._/?hl=en"
+            target="_blank"
+            class="con-logo"
+          >
+            <i class="fa fa-instagram"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/yuvan-prasath-635787252/"
+            target="_blank"
+            class="con-logo"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="row" style="margin-bottom: 100px">
+      <div
+        class="col-lg-6"
+        id="profile_img"
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        <img src="images/bg.png" alt="" class="bg" />
+        <img src="images/person.png" alt="" class="per" />
+      </div>
+      <div class="col-lg-6">
+        <h1 class="name reveal5">YUVAN PRASATH B</h1>
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: left;
+          "
+          class="skill reveal5"
+        >
+          <h1>
+            <span>C</span> | <span>C++</span> | <span>JAVA</span> |
+            <span>PYTHON</span> | <span>DJANGO</span> | <span>FRONTEND</span> |
+            <span>BOOTSTRAP</span>
+          </h1>
+        </div>
+        <div
+          class="cv reveal5"
+          style="
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <a href="images/yuvan_prasath_CV.pdf" download id="dcv"
+            >DOWNLOAD CV</a
+          >
+          <a href="" id="dcon">CONTACT</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      const revealElement5 = document.querySelectorAll(".reveal5");
+
+      // Intersection Observer to detect when elements are in view
+      const observer5 = new IntersectionObserver(
+        (entries, observer5) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateX(0)";
+              observer5.unobserve(entry.target); // Stop observing once revealed
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Adjust this value to control when the reveal happens
+        }
+      );
+
+      // Observe each element with the class "reveal"
+      revealElement5.forEach((element) => {
+        observer5.observe(element);
+      });
+    </script>
+    <div class="row" style="margin-top: 30px; position: relative">
+      <div class="col-lg-8" style="position: relative">
+        <h1 class="abouth1 reveal" id="abouth1">WHO AM I ?</h1>
+        <h1 class="abouth12 reveal">HELLO</h1>
+        <h3 class="about">
+          I'm Yuvan Prasath B, on an exhilarating journey exploring Python full
+          stack development with a keen focus on Django. With a solid foundation
+          in Python, Django, HTML, CSS, and JavaScript, I'm passionate about
+          creating engaging web applications that meld functionality with
+          seamless user experiences. As a recent entrant into the tech realm, I
+          bring enthusiasm, a hunger for learning, and a knack for
+          problem-solving. I thrive in collaborative settings, eagerly absorbing
+          insights from seasoned professionals while infusing my fresh
+          perspective into projects.
+        </h3>
+        <h3 class="about">
+          My fascination with technology goes beyond coding— I'm an avid
+          learner, constantly exploring emerging trends and tools in the tech
+          landscape. I'm driven by the belief that continuous growth is
+          essential in this ever-evolving field. Beyond technical skills, I
+          value teamwork, creativity, and the drive to innovate, aiming to
+          contribute meaningfully to impactful projects that push the boundaries
+          of what's possible in web development.
+        </h3>
+      </div>
+      <div class="col-lg-4 reveal" style="position: relative">
+        <img src="images/Untitled Project (1).jpg" width="100%" />
+      </div>
+      <script>
+        const revealElements = document.querySelectorAll(".reveal");
+
+        // Intersection Observer to detect when elements are in view
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                entry.target.style.transform = "translateX(0)";
+                observer.unobserve(entry.target); // Stop observing once revealed
+              }
+            });
+          },
+          {
+            threshold: 0.5, // Adjust this value to control when the reveal happens
+          }
+        );
+
+        // Observe each element with the class "reveal"
+        revealElements.forEach((element) => {
+          observer.observe(element);
+        });
+      </script>
+    </div>
+
+    <!-- Place the HELLO text after col-lg-4 -->
+    <div class="row" style="position: relative">
+      <div
+        class="col-lg-12"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <h1 id="skillsdivh1">MY SKILLS</h1>
+        <div
+          class="skill-progress"
+          style="display: flex; align-items: center; flex-wrap: wrap"
+        >
+          <div
+            class="skills"
+            style="
+              display: flex;
+              align-items: center;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 50px;
+            "
+          >
+            <div>
+              <h3 class="progress_head">C</h3>
+              <div class="progress-bar">
+                <div class="c"><span>73%</span></div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="progress_head">C++</h3>
+              <div class="progress-bar">
+                <div class="ca"><span>60%</span></div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="progress_head">JAVA</h3>
+              <div class="progress-bar">
+                <div class="java"><span>79%</span></div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="progress_head">PYTHON</h3>
+              <div class="progress-bar">
+                <div class="python"><span>81%</span></div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="progress_head">HTML/CSS</h3>
+              <div class="progress-bar">
+                <div class="html"><span>92%</span></div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="progress_head">DJANGO</h3>
+              <div class="progress-bar">
+                <div class="css"><span>74%</span></div>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="progress_head">JAVASCRIPT</h3>
+              <div class="progress-bar">
+                <div class="js"><span>75%</span></div>
+              </div>
+            </div>
+            <div>
+              <h3 class="progress_head">SQL</h3>
+              <div class="progress-bar">
+                <div class="sql"><span>80%</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function animateProgressBar(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const progressBarDivs =
+              entry.target.querySelectorAll(".progress-bar div");
+            progressBarDivs.forEach((bar) => {
+              const width = parseInt(
+                bar.parentNode.querySelector("span").textContent
+              );
+              animateWidth(bar, width);
+            });
+            observer.unobserve(entry.target);
+          }
+        });
+      }
+
+      function animateWidth(element, targetWidth) {
+        let currentWidth = 0;
+        const animationDuration = 1000; // Adjust the duration as needed (in milliseconds)
+        const animationStep = (targetWidth / animationDuration) * 16; // 60 frames per second (1000ms / 60 frames)
+
+        function updateWidth(timestamp) {
+          currentWidth += animationStep;
+          if (currentWidth < targetWidth) {
+            element.style.width = currentWidth + "%";
+            requestAnimationFrame(updateWidth);
+          } else {
+            element.style.width = targetWidth + "%";
+          }
+        }
+
+        requestAnimationFrame(updateWidth);
+      }
+
+      const progressBars = document.querySelectorAll(".skills");
+      const observerOptions = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.2, // Adjust this value to control when the animation triggers
+      };
+
+      const progressBarObserver = new IntersectionObserver(
+        animateProgressBar,
+        observerOptions
+      );
+
+      progressBars.forEach((bar) => {
+        progressBarObserver.observe(bar);
+      });
+    </script>
+    <div class="row" style="padding: 20px; margin-top: 50px">
+      <div
+        class="col-lg-12"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
+        <div style="width: 100%">
+          <div class="edu-block reveal1">
+            <h2 class="edu-heading">DEGREE - BCA</h2>
+            <h3 class="edu-txt">
+              St Francis De Sales College, Electronic City, Bangalore - 560099
+            </h3>
+            <h3 class="edu-txt">Bangalore University</h3>
+            <span style="display: flex; align-items: center"
+              ><h3 class="edu-txt">2023-2026</h3>
+              <h3 class="edu-txt" style="margin-left: 30px">Pursuing</h3></span
+            >
+          </div>
+          <div class="edu-block reveal1">
+            <h2 class="edu-heading">CLASS 12</h2>
+            <h3 class="edu-txt">
+              Nalanda Internation Public School, Hosur - 635109
+            </h3>
+            <h3 class="edu-txt">Central Board of Secondary Education (CBSE)</h3>
+            <span style="display: flex; align-items: center"
+              ><h3 class="edu-txt">2023</h3>
+              <h3 class="edu-txt" style="margin-left: 30px">74%</h3></span
+            >
+          </div>
+
+          <div class="edu-block reveal1">
+            <h2 class="edu-heading">CLASS 10</h2>
+            <h3 class="edu-txt">Carmel Internation School, Hosur - 635109</h3>
+            <h3 class="edu-txt">
+              Indian Certificate of Secondary Education (ICSE)
+            </h3>
+            <span style="display: flex; align-items: center"
+              ><h3 class="edu-txt">2021</h3>
+              <h3 class="edu-txt" style="margin-left: 30px">82%</h3></span
+            >
+          </div>
+        </div>
+
+        <h1 id="eduh1">EDUCATION</h1>
+      </div>
+    </div>
+    <script>
+      const revealElements1 = document.querySelectorAll(".reveal1");
+
+      // Intersection Observer to detect when elements are in view
+      const observer1 = new IntersectionObserver(
+        (entries, observer1) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateX(0)";
+              observer1.unobserve(entry.target); // Stop observing once revealed
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Adjust this value to control when the reveal happens
+        }
+      );
+
+      // Observe each element with the class "reveal"
+      revealElements1.forEach((element) => {
+        observer1.observe(element);
+      });
+    </script>
+    <h1 class="pro-head reveal2" id="proj">PROJECTS</h1>
+    <div class="row">
+      <div
+        class="col-lg-12"
+        style="
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        "
+      >
+        <div class="card reveal2">
+          <div class="imgBx">
+            <img src="images/emp_manage_img.jpg" alt="" />
+          </div>
+          <div class="content">
+            <h4 style="font-size: 1.3em">Employee Management System</h4>
+            <p>
+              Designed a comprehensive Django-based employee management system,
+              streamlining HR operations and enhancing efficiency with robust
+              user authentication and data management capabilities.
+            </p>
+            <a href="https://github.com/yuvanprasathb/EMS1" target="_blank"
+              >GITHUB <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card reveal2">
+          <div class="imgBx"><img src="images/jsa_img.jpg" alt="" /></div>
+          <div class="content">
+            <h4 style="font-size: 1.3em">Job Searching Application</h4>
+            <p>
+              Developed a user-friendly job searching application using Tkinter,
+              offering an intuitive interface for users to explore job listings
+              and apply filters for a personalized job hunt experience.
+            </p>
+            <a
+              href="https://github.com/yuvanprasathb/job-searching-app"
+              target="_blank"
+              >GITHUB <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card reveal2">
+          <div class="imgBx"><img src="images/nike_img.jpg" alt="" /></div>
+          <div class="content">
+            <h4 style="font-size: 1.3em">Nike Clone Website</h4>
+            <p>
+              Crafted a dynamic Nike clone website using HTML, CSS, and
+              JavaScript, replicating the brand's aesthetics and functionalities
+              for an immersive user experience.
+            </p>
+            <a
+              href="https://github.com/yuvanprasathb/nike-clone"
+              target="_blank"
+              >GITHUB <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card reveal2">
+          <div class="imgBx"><img src="images/tws_img.jpg" alt="" /></div>
+          <div class="content">
+            <h4 style="font-size: 1.3em">TWS Gym Website</h4>
+            <p>
+              Engineered a responsive TWS Gym website using HTML, CSS, and
+              JavaScript, integrating interactive features for seamless
+              navigation and an engaging user interface.
+            </p>
+            <a
+              href="https://github.com/yuvanprasathb/tws-gym-website"
+              target="_blank"
+              >GITHUB <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="card reveal2">
+          <div class="imgBx"><img src="images/monz_img.jpg" alt="" /></div>
+          <div class="content">
+            <h4 style="font-size: 1.3em">Monz School Website</h4>
+            <p>
+              Created a polished Monz School website employing HTML, CSS, and
+              JavaScript, featuring a user-centric design and interactive
+              elements to facilitate easy access to school information and
+              resources.
+            </p>
+            <a
+              href="https://github.com/yuvanprasathb/monzschool"
+              target="_blank"
+              >GITHUB <i class="fa fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const revealElements2 = document.querySelectorAll(".reveal2");
+
+      // Intersection Observer to detect when elements are in view
+      const observer2 = new IntersectionObserver(
+        (entries, observer1) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+              observer1.unobserve(entry.target); // Stop observing once revealed
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Adjust this value to control when the reveal happens
+        }
+      );
+
+      // Observe each element with the class "reveal"
+      revealElements2.forEach((element) => {
+        observer2.observe(element);
+      });
+    </script>
+
+    <h1 class="con-head reveal3" id="con-head">CONTACT ME</h1>
+    <h2 class="con-ways reveal3">Ways To Contact Me</h2>
+    <h3 class="con-para reveal3">
+      Please feel free to get in touch with me by using the following contact
+      information. Whether you have questions, comments, or would like to
+      discuss potential opportunities, I am available and eager to connect.
+    </h3>
+    <script>
+      const revealElements3 = document.querySelectorAll(".reveal3");
+
+      // Intersection Observer to detect when elements are in view
+      const observer3 = new IntersectionObserver(
+        (entries, observer3) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateX(0)";
+              observer3.unobserve(entry.target); // Stop observing once revealed
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Adjust this value to control when the reveal happens
+        }
+      );
+
+      // Observe each element with the class "reveal"
+      revealElements3.forEach((element) => {
+        observer3.observe(element);
+      });
+    </script>
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      "
+      class="con-icon reveal4"
+    >
+      <a
+        href="https://www.facebook.com/yuvan.prasath.771"
+        target="_blank"
+        class="con-facebook"
+        ><i class="fa fa-facebook-f"></i>Facebook</a
+      >
+      <a
+        href="https://www.instagram.com/_.__u1__._/?hl=en"
+        target="_blank"
+        class="con-insta"
+        ><i class="fa fa-instagram"></i>Instagram</a
+      >
+      <a href="https://github.com/yuvanprasathb" target="_blank" class="con-git"
+        ><i class="fa fa-github"></i>Github</a
+      >
+      <a
+        href="https://www.linkedin.com/in/yuvan-prasath-635787252/"
+        target="_blank"
+        class="con-linkedin"
+        ><i class="fa fa-linkedin"></i>LinkedIn</a
+      >
+      <a href="tel:6379120712" target="_blank" class="con-phone"
+        ><i class="fa fa-phone"></i>Phone</a
+      >
+      <a
+        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSHxwFTMRjvWqBlRfHKXVQbBFlnvPjSWFSQKZBDZDQQckdrwjFqvdJFjWgRTggHpwjzlnjNt"
+        target="_blank"
+        class="con-gmail"
+        ><i class="fa fa-envelope"></i>Gmail</a
+      >
+      <a
+        href="https://api.whatsapp.com/send/?phone=%2B916379120712&text&type=phone_number&app_absent=0"
+        target="_blank"
+        class="con-whatsapp"
+        ><i class="fa fa-whatsapp"></i>Whatsapp</a
+      >
+    </div>
+    <script>
+      const revealElements4 = document.querySelectorAll(".reveal4");
+
+      // Intersection Observer to detect when elements are in view
+      const observer4 = new IntersectionObserver(
+        (entries, observer4) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = 1;
+              entry.target.style.transform = "translateY(0)";
+              observer4.unobserve(entry.target); // Stop observing once revealed
+            }
+          });
+        },
+        {
+          threshold: 0.5, // Adjust this value to control when the reveal happens
+        }
+      );
+
+      // Observe each element with the class "reveal"
+      revealElements4.forEach((element) => {
+        observer4.observe(element);
+      });
+    </script>
+  </body>
+</html>
