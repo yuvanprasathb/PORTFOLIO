@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,500;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bricolage+Grotesque&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,500;1,700&family=Teko:wght@300;400;500;600;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bricolage+Grotesque&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=Gabarito:wght@400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,500;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bricolage+Grotesque&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400;500;600;700;800;900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,500;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bricolage+Grotesque&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dosis:wght@200;300;400;500;600;700;800&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,500;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=Bricolage+Grotesque&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Ephesis&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,500;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&family=Bebas+Neue&family=Bricolage+Grotesque&family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Ephesis&family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Gabarito:wght@400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik:ital,wght@0,300;0,400;1,500;1,700&family=Space+Grotesk:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+padding: 0;
+margin: 0;
+background-color: #2b2b2b;
+}
+
+nav{
+    background-color: transparent;
+ 
+    width: 100%;
+  
+    z-index: 2;
+   
+}
+
+nav ul{
+    float: right;
+   padding: 0;
+}
+nav ul li{
+display: inline-block;
+margin-top: 15px;
+margin-right: 20px;
+}
+
+nav ul li a{
+    color:white;
+    font-family: 'poppins';
+    font-size: 1.2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+}
+.con-logo{
+    margin: 0;
+}
+a.active, a:hover{
+    transition: .5s;
+    text-decoration: none;
+    cursor: pointer;
+    color: orange;
+}
+.checkbtn{
+    float: right;
+cursor: pointer;
+margin-top: 25px;
+    margin-right: 40px;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width:1200px){
+nav ul li a{
+    font-size: 20px;
+  
+}
+nav ul{
+    float: right;
+    margin-top: 15px;
+}
+#signin{
+    font-size: 20px;
+}
+   
+}
+.logo img{
+    height: 80px;
+   }
+
+
+@media (max-width:858px){
+   .checkbtn{
+    display: block;
+   }
+   .logo img{
+    height: 90px;
+   }
+   a.active, .not_active:hover{
+    color: orange;
+   }
+   ul{
+   position: absolute;
+    width: 100%;
+   height: 50px;
+   display: flex;
+   margin: 0;
+   justify-content: center;
+   align-items: center;
+   z-index: 2;
+    background: black;
+    top: 80px;
+    left: -130%;
+    transition: all .5s;
+    text-align: left;
+   }
+
+ nav ul li{
+    margin-top: 0;
+ }
+   nav ul li a{
+    font-size: 1em;
+margin: 1px;
+margin-top: 0px;
+padding: 0;
+color: white;
+   }
+   #check:checked ~ ul{
+    left: 0;
+   }
+    }
+    .row{
+        margin: 0;
+        padding: 0;
+    }
+    .col-lg-12{
+        margin: 0;
+        padding: 0;
+    }
+ .logo h1{
+    font-family: 'poppins';
+    font-size: 3em;
+margin: 0;
+margin-top: 10px;
+display: inline-block;
+    margin-left: 20px;
+    padding: 0;
+    color: white;
+    font-weight: 600;
+ }
+ .logo h1 span{
+
+    color: orange;
+
+ }
+ .bg
+ {
+   
+    width: 90%;
+    left: 0;
+    transition: 1s;
+    top: 0;
+    
+ }
+ .per{
+    width:70%;
+    position: absolute;
+    border-radius: 50%;
+    transition: 1s;
+  
+ }
+ .name{
+    font-family: 'poppins';
+    color: orange;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+    margin-top: 150px;
+ }
+ .skill h1{
+    font-family: 'poppins';
+    color: orange;
+    font-weight: 600;
+    font-size: 2em;
+    margin-right: 30px;
+    transition: 0.5s;
+    text-align: center;
+ }
+ .text{
+   text-align: center;
+   margin-top: 20px;
+   font-size: 1.5em;
+   letter-spacing: 15px;
+   color: #0e3742;
+   text-transform: uppercase;
+   font-weight: 600;
+   line-height: 1.5em;
+   
+   animation: glow 5s linear infinite;
+}
+@keyframes glow
+{
+   0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+color:#0e3742;
+text-shadow: none;
+   }
+   18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+   {
+       text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 160px #03bcf4;
+       color: white;
+       
+   }
+}
+
+.text1{
+   text-align: center;
+   margin-top: 20px;
+   font-size: 1.5em;
+   letter-spacing: 15px;
+   color: #420e0e;
+   text-transform: uppercase;
+   font-weight: 600;
+   line-height: 1.5em;
+   
+   animation: glow1 5s linear infinite;
+}
+@keyframes glow1
+{
+   0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+color:#420e0e;
+text-shadow: none;
+   }
+   18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+   {
+       text-shadow: 0 0 10px #f40303,
+        0 0 20px #f40303,
+        0 0 40px #f40303,
+        0 0 80px #f40303,
+        0 0 160px #f40303;
+       color: white;
+       
+   }
+}
+
+
+ .skill h1 span{
+    color:white;
+ }
+ .skill h1:hover{
+    color: palevioletred;
+    cursor: pointer;
+    scale: 1.1;
+ }
+ #dcv{
+    color: white;
+    font-family: 'poppins';
+    font-size: 1.5em;
+    padding: 0 15px;
+    background-color: transparent;
+    transition: 0.5s;
+    border: 3px solid white;
+ }
+ #dcon{
+    color: white;
+    font-family: 'poppins';
+    font-size: 1.5em;
+    padding: 0 15px;
+    transition: 0.5s;
+    margin-left: 20px;
+    background-color: transparent;
+    border: 3px solid white;
+ }
+ #dcon:hover{
+    color: orange;
+   background-color: white;
+    scale: 1.2;
+    
+ }
+ #dcv:hover{
+    color: orange;
+   background-color: white;
+    scale: 1.2;
+ }
+ #profile_img:hover .bg{
+    transform: rotate(20deg)
+ }
+ #dcv:hover .bg{
+    transform: rotate(30deg)
+ }
+ #profile_img{
+ 
+    
+    overflow: hidden;
+ }
+ #profile_img:hover .per{
+    scale: 1.1;
+ }
+ .about{
+    font-family: 'poppins';
+    text-align: justify;
+    color: white;
+    font-weight: 500;
+ }
+ .abouth1{
+    font-family: 'poppins';
+    text-align: left;
+    font-size: 4em;
+    color: white;
+    font-weight: 700;
+    text-shadow: 3px 2px 0px orange;
+ }
+ .abouth12{
+    font-family: 'poppins';
+    text-align: left;
+    font-size: 3em;
+    color: white;
+    font-weight: 700;
+    background-color: #ffa500;
+ }
+ .symbols{
+    position: absolute;
+    width: 100px;
+    right: 10px;
+    top: 20px;
+    z-index: 1;
+ }
+ .symbols1{
+    position: absolute;
+    width: 50px;
+    right: 120px;
+    top: 40px;
+    z-index: 1;
+ }
+ .reveal{
+    transform: translateX(100px);
+    opacity: 0;
+    position: relative;
+    transition: 2s;
+ }
+ .abouth12.reveal{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 2s;
+ }
+ .abouth1.reveal{
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: 2s;
+ }
+ @media (max-width:1430px) {
+   .name{
+      margin-top: 20px;
+   }
+   
+ }
+ #skillsdivh1{
+   writing-mode: vertical-lr;
+   transform: rotate(180deg);
+   font-family: 'poppins';
+   color: orange;
+   font-weight: 700;
+   font-style: italic;
+   text-shadow: 3px 2px 0px black;
+   letter-spacing: 3px;
+
+ }
+ #eduh1{
+   writing-mode: vertical-lr;
+   transform: rotate(360deg);
+   font-family: 'poppins';
+   color: orange;
+   margin-left: 30px;
+   font-weight: 700;
+   font-style: italic;
+   text-shadow: 3px 2px 0px black;
+   letter-spacing: 3px;
+ }
+ #card-body{
+   background-color: aqua;
+   width: 250px;
+   height: 250px;
+   position: relative;
+   margin: 40px;
+ }
+ /*****************************************************************************************************************************/
+ 
+.progress_head{
+   font-weight: 400;
+   letter-spacing: 1px;
+  
+   margin-left: 5px;
+   margin-bottom: 10px;
+   color:#fff;
+   display: block;
+   text-align: center;
+   font-size: 16px;
+   font-family: 'poppins';
+}
+.progress-bar{
+   background-color: #959595;
+   width: 300px;
+   height: 10px;
+  
+   border-radius: 5px;
+}
+.progress-bar div{
+   height: 10px;
+   border-radius: 5px;
+   width: 0%;
+ 
+}
+.progress-bar div span{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+background:white;
+float: right;
+margin-top: -15px;
+margin-right: -20px;
+color: #333;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.c{
+   background: orangered;
+   animation: c 1s linear forwards;
+}
+.ca{
+   background: orangered;
+   animation: ca 1s linear forwards;
+
+}
+.java{
+   background: orangered;
+   animation: java 1s linear forwards;
+
+}
+.python{
+   background: orangered;
+   animation: python 1s linear forwards;
+
+}
+.html{
+   background: orangered;
+   animation: html 1s linear forwards;
+
+}
+.css{
+   background: orangered;
+   animation: css 1s linear forwards;
+
+}
+.js{
+   background: orangered;
+   animation: js 1s linear forwards;
+
+}
+.sql{
+   background: orangered;
+   animation: sql 1s linear forwards;
+
+}
+ /*****************************************************************************************************************************/
+ .edu-heading{
+   font-family: 'poppins';
+   font-weight: 700;
+   color: white;
+   background-color: orange;
+
+ }
+ .edu-txt{
+   font-family: 'poppins';
+   color: white;
+   font-weight: 500;
+ }
+ .row{
+   padding: 0;
+   margin: 0;
+ }
+ .col-lg-12{
+   margin: 0;
+   padding: 0;
+ }
+ .reveal1{
+   transform: translateX(-100px);
+   opacity: 0;
+   transition: 1s;
+ }
+ .pro-head.reveal2{
+   transform:  translateY(30px);
+   opacity: 0;
+   transition: 2s;
+ }
+ .pro-head{
+   font-family: 'poppins';
+    text-align: center;
+    font-size: 4em;
+    color: white;
+    margin-top: 100px;
+    font-weight: 700;
+    text-shadow: 3px 2px 0px orange;
+   
+ }
+ .con-head{
+   font-family: 'poppins';
+   text-align: center;
+   font-size: 4em;
+   color: white;
+  
+   font-weight: 700;
+   text-shadow: 3px 2px 0px orange;
+ }
+ .con-head.reveal3{
+   transform: translateX(-100px);
+   opacity: 0;
+   transition: 2s;
+ }
+ /**************************************************************************************************************************************/
+ 
+.maincontainer{
+   position: relative;
+   width:300px ;
+   margin: 30px 0;
+   height: 300px;
+  }
+.reveal2{
+   transform: translateY(100px);
+   transform: 2s;
+   opacity: 0;
+  }
+.thecard{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+  
+   transform-style: preserve-3d;
+   transition: all 0.5s ease;
+   
+}
+.thefront{
+   position: absolute;
+   width: 100%;
+   border-radius: 20px;
+   height: 100%;
+   backface-visibility: hidden;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: black;
+}
+.thefront.ems{
+ background-image: url('images/emp_manage_img.jpg');
+}
+.thefront.jsa{
+   background-image: url('images/jsa_img.jpg');
+ }
+ .thefront.nike{
+   background-image: url('images/nike_img.jpg');
+ }
+ .thefront.tws{
+   background-image: url('images/tws_img.jpg');
+ }
+ .thefront.monz{
+   background-image: url('images/monz_img.jpg');
+ }
+.theback {
+   position: absolute;
+   width: 100%;
+   border-radius: 20px;
+   background: rgb(128,72,156);
+background: linear-gradient(0deg, rgba(128,72,156,1) 0%, rgba(109,103,228,1) 100%);
+   height: 100%;
+   backface-visibility: hidden;
+  
+   color: black;
+   transform: rotateY(180deg);
+}
+.thecard:hover{
+   transform: rotateY(180deg);
+
+}
+.thefront h3{
+   font-family: 'poppins';
+   font-weight: 700;
+   color: white;
+   text-align: center;
+   text-shadow: 0px 0px 10px black;
+}
+.thefront h4{
+   font-family: 'poppins';
+   font-weight: 800;
+   color: white;
+   text-align: center;
+   text-shadow: 0px 0px 10px black;
+}
+
+.theback h2{
+   font-family: 'poppins';
+text-align: center;
+color: white;
+text-decoration: underline;
+margin-top: 30px;
+   font-weight: 500;
+}
+
+.theback #desc{
+   font-family: 'poppins';
+text-align: center;
+color: white;
+text-decoration: none;
+
+margin: 20px 20px;
+   font-weight: 300;
+}
+#learnmore_btn{
+   color: black;
+   background-color: orangered;
+   padding: 5px 15px;
+   border: 0;
+   border-radius: 5px;
+   font-family: 'poppins';
+   font-weight: 500;
+   font-size: 15px;
+   cursor: pointer;
+}
+#learnmore_btn:hover{
+
+   color: orangered;
+   background-color: #000000;
+}
+ /**************************************************************************************************************************************/
+ #zip_btn{
+   font-family: 'poppins';
+   font-size: 20px;
+   color: black;
+   background-color: orange;
+   padding: 3px 15px;
+   border: 0;
+   margin: 5px;
+   border-radius: 20px;
+   font-weight: 600;
+   transition: 1s;
+ }
+ #git_btn{
+   font-family: 'poppins';
+   font-size: 20px;
+   color: black;
+   background-color: orange;
+   padding: 3px 15px;
+   transition: 1s;
+   margin: 5px;
+   border: 0;
+   border-radius: 20px;
+   font-weight: 600;
+ }
+ #zip_btn:hover{
+   color: orange;
+   background-color: #000000;
+ }
+ #git_btn:hover{
+   color: orange;
+   background-color: #000000;
+ 
+ }
+ /*****************************************************************************************************************************************/
+ .card.reveal2{
+   transform: translateY(100px);
+   opacity: 0;
+
+ }
+
+.card{
+   position: relative;
+   width: 350px;
+   margin: 60px 20px;
+   height: 300px;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow: 0 0px 5px rgba(0,0,0,1);
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   transition: 0.5s;
+}
+.card:hover{
+   height: 400px;
+}
+.card .imgBx{
+   position: absolute;
+   top: 20px;
+   width: 300px;
+   height: 220px;
+   background: #333;
+   border-radius: 12px;
+   overflow: hidden;
+   transition: 0.5s;
+}
+.card:hover .imgBx{
+   top: -100px;
+   scale: 0.75;
+   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+.card .imgBx img{
+   position: absolute;
+   top:0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+
+}
+.card .content{
+   position: absolute;
+   top:252px;
+   width: 100%;
+   padding: 0 30px;
+   height: 35px;
+   overflow: hidden;
+   text-align: center;
+   transition: 0.5s;
+}
+.card:hover .content{
+   top: 130px;
+   height: 250px;
+}
+.card .content h4{
+   font-size: 1.5em;
+   font-weight: 700;
+   font-family: 'Josefin Sans';
+   color:orange;
+}
+.card .content p{
+   color: black;
+   font-weight: 600;
+   font-family: 'poppins';
+   text-align: justify;
+}
+.card .content a{
+ position: relative;
+ 
+ display: inline-block;
+ padding: 12px 25px;
+ background: orange;text-decoration: none;
+ font-weight: 800;
+ border-radius: 8px;
+ color: black;
+}
+.card .content a:hover{
+   color: orange;
+   background: black;
+}
+
+ /******************************************************************************************************************************************/
+
+ .con-ways.reveal3{
+   transform: translateX(-100px);
+   opacity: 0;
+   transition: 2s;
+ }
+
+ .con-ways{
+   font-family: 'poppins';
+   text-align: center;
+   font-size: 3em;
+   
+   margin: 20px auto;
+   color: white;
+   font-weight: 700;
+   background-color: #ffa500;
+ }
+ .con-para{
+   font-family: 'poppins';
+   text-align: center;
+   
+   
+   margin: 30px auto;
+   color: white;
+   font-weight: 600;
+ }
+ .auto-type{
+   color: #0575e8;
+ }
+ .con-para.reveal3{
+   transform: translateX(-100px);
+   opacity: 0;
+   transition: 2s;
+ }
+ .con-facebook{
+   font-family: 'poppins';
+   font-weight: 700;
+   padding: 3px 15px;
+   color: black;
+   margin: 20px 20px;
+   font-size: 20px;
+   border: 2px solid gray;
+
+ }
+ .con-facebook i{
+   margin-right: 10px;
+ }
+ .con-facebook:hover{
+   color: white;
+   background-color: #0575e8;
+   border: 0;
+ }
+
+ .con-insta{
+   font-family: 'poppins';
+   font-weight: 700;
+   padding: 3px 15px;
+   margin: 20px 20px;
+   color: black;
+   font-size: 20px;
+   border: 2px solid gray;
+
+ }
+ .con-insta i{
+   margin-right: 10px;
+ }
+ .con-insta{
+   color: white;
+   background: -webkit-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -webkit-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: -moz-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -moz-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: -ms-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -ms-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: -o-radial-gradient(32% 106%, circle cover, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), -o-linear-gradient(-45deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   background: radial-gradient(circle farthest-corner at 32% 106%, rgb(255, 225, 125) 0%, rgb(255, 205, 105) 10%, rgb(250, 145, 55) 28%, rgb(235, 65, 65) 42%, transparent 82%), linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
+   border: 0;
+ }
+
+
+ .con-git{
+   font-family: 'poppins';
+   font-weight: 700;
+   padding: 3px 15px;
+   margin: 20px 20px;
+   color: black;
+   font-size: 20px;
+   border: 2px solid gray;
+
+ }
+ .con-git i{
+   margin-right: 10px;
+ }
+ .con-git{
+   color: white;
+   background-color: black;
+   border: 0;
+ }
+
+
+
+ 
+ .con-linkedin{
+   font-family: 'poppins';
+   font-weight: 700;
+   padding: 3px 15px;
+   margin: 20px 20px;
+   color: black;
+   font-size: 20px;
+   border: 2px solid gray;
+
+ }
+ .con-linkedin i{
+   margin-right: 10px;
+ }
+ .con-linkedin{
+   color: white;
+   background-color: #307bab;
+   border: 0;
+ }
+
+
+ 
+ .con-phone{
+   font-family: 'poppins';
+   font-weight: 700;
+   padding: 3px 15px;
+   color: black;
+   margin: 20px 20px;
+   font-size: 20px;
+   border: 2px solid gray;
+
+ }
+ .con-phone i{
+   margin-right: 10px;
+ }
+ .con-phone{
+   color: white;
+   background-color: orange;
+   border: 0;
+ }
+
+
+
+ 
+ 
+ .con-gmail{
+   font-family: 'poppins';
+   font-weight: 700;
+   margin: 20px 20px;
+   padding: 3px 15px;
+   color: black;
+   font-size: 20px;
+   border: 2px solid gray;
+
+ }
+ .con-gmail i{
+   margin-right: 10px;
+ }
+ .con-gmail{
+   color: white;
+   background: linear-gradient(-120deg, #4285f4, #34a853, #fbbc05, #ea4335);;
+   border: 0;
+ }
+
+ 
+ .con-whatsapp{
+   font-family: 'poppins';
+   font-weight: 700;
+   margin: 20px 20px;
+   padding: 3px 15px;
+   color: black;
+   font-size: 20px;
+   border: 2px solid gray;
+
+ }
+ .con-whatsapp i{
+   margin-right: 10px;
+ }
+ .con-whatsapp{
+   color: white;
+   background: #05d445;
+   border: 0;
+ }
+ .con-whatsapp:visited{
+   color: black; /* Color after link has been visited */
+  text-decoration: none; 
+ }
+ body{
+   scroll-behavior: smooth;
+ }
+ .con-icon.reveal4{
+   transform: translateY(-100px);
+   opacity: 0;
+   transition: 2s;
+ }
+ .name.reveal5{
+   transform: translateX(100px);
+   opacity: 0;
+   transition: 2s;
+ }
+ .cv.reveal5{
+   transform: translateX(100px);
+   opacity: 0;
+   transition: 2s;
+ }
+ .skill.reveal5{
+   transform: translateX(100px);
+   opacity: 0;
+   transition: 2s;
+ }
